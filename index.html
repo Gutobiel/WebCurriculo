@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Guto Currículo</title>
+    <link rel="stylesheet" href="styles.css"> 
+  </head>
+  <body>
+    <br><br><br><br><br><br><br>
+    <div class="card">
+      <div class="tools">
+        <div class="circle">
+          <span class="red box"></span>
+        </div>
+        <div class="circle">
+          <span class="yellow box"></span>
+        </div>
+        <div class="circle">
+          <span class="green box"></span>
+        </div>
+      </div>
+      <div class="card__content">
+    <div id="main-tab" class="tab active">
+ 
+      <h1>Augusto Gabriel Rodrigues dos Santos</h1>
+
+      <img class="profile-img" src="assets/fotoEu.png" alt="Sua Foto">
+      <div class="eusou">
+      <h2>Desenvolvedor Fullstack</h2>
+        <a href="https://www.instagram.com/gutobielsantos/">Instagram</a></li>
+        <br><a href="https://github.com/Gutobiel">GitHub</a></li>
+        <br><a href="https://www.linkedin.com/in/augusto-gabriel-rodrigues-dos-santos-36a20220b/">Linkedin</a></li>
+      </div>
+        <div class="experiencia">
+          <br>
+        <h2>Experiência</h2>
+        <h5>Desenvolvi um negócio inovador <br><br> app para mobilidade urbana | 2023- Now</h6>
+        <p>-Melhorar a satisfação das pessoas no trânsito com a implementação de semáforos inteligentes. <br>
+          -Desenvolver uma aplicação web e mobile.
+          </h6>
+  
+          <h5>Atividade Filantrópica <br> Monitor de informática | 2022- 2023 </h5>
+          <p>-Aulas de informática para a 3° idade <br>
+            -Oque foi ensinado: Windows, Excel,
+            PowerPoint, Word e internet, mobile e
+            segurança online.
+            </p>
+          </div>
+    </div>
+
+    <div id="about-tab" class="tab">
+      <h2>Sobre Mim</h2>
+      <h2>Desenvolvedor Fullstack</h2> 
+        <p>Sou um programador JAVA júnior
+          altamente qualificado e disposto a
+          aprender mais e adquirir experiências. Em
+          alguns meses de aprendizado, realizei
+          projetos de desenvolvimento de
+          aplicativos conectado a um banco de
+          dados.</p>
+        <h2>Educação</h2>
+        <P>Centro universitário de Brasília - CEUB <br> Análise e desenvolvimento de sistemas 2022 - 2024</p>
+        <h2>Línguas</h2>
+        <P>Português <br>
+          Inglês Intermediário</P>
+
+    </div>
+
+    <div id="skills-tab" class="tab">
+        <h2>Habilidades</h2>
+          <ul>
+            <li><img class="skill_img" src="assets/java.png" alt="java"> Java </li>
+            <li><img class="skill_img" src="assets/c.png" alt="c"> C</li>
+            <li><img class="skill_img" src="assets/html.png" alt="html"> Html</li>
+            <li><img class="skill_img" src="assets/sql.png" alt="sql"> SQL</li>
+            <li><img class="skill_img" src="assets/python.png" alt="python"> Python</li>
+            <li><img class="skill_img" src="assets/oracle-icon-png-13.jpg" alt="oracle"> Oracle DataBase</li>
+          </ul>
+        </div>
+      </div>
+
+    <div id="contact-tab" class="tab">
+      <h2>Contato</h2>
+      <p>Endereço de e-mail: gutobielsantos@gmail.com</p>
+      <p>Número de telefone: (61) 98569-5745</p>
+      <p>Candangolândia - Brasília-DF</p>
+      
+      <div class="block-title">
+        
+        <h2>Como posso te ajudar?</h2>
+        <div class="">
+          <form id="contact_form" class="contact-form" action="contact_form/contact_form.php" method="post" novalidate="true">
+
+            <div class="messages"></div>
+
+            <div class="controls two-columns">
+              <div class="fields clearfix">
+                <div class="left-column">
+                  <div class="form-group form-group-with-icon">
+                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Nome" required="required" data-error="Name is required.">
+                    <div class="form-control-border"></div>
+                    <div class="help-block with-errors"></div>
+                  </div>
+
+                  <div class="form-group form-group-with-icon">
+                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Endereço de e-mail" required="required" data-error="Valid email is required.">
+                    <div class="form-control-border"></div>
+                    <div class="help-block with-errors"></div>
+                  </div>
+
+                  <div class="name">
+                    <input id="form_name" type="text" name="subject" class="form-control" placeholder="Assunto" required="required" data-error="Subject is required.">
+                    <div class="form-control-border"></div>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="message">
+                  <div class="form-group form-group-with-icon">
+                    <textarea id="form_message" name="message" class="form-control" placeholder="Mensagem" rows="7" required="required" data-error="Please, leave me a message."></textarea>
+                    <div class="form-control-border"></div>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+              </div>
+
+              <input type="submit" class="send" value="Enviar mensagem">
+              
+            </div>
+          </form>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="botao">
+    <button onclick="openTab('main-tab')">Principal</button>
+    <button onclick="openTab('about-tab')">Sobre Mim</button>
+    <button onclick="openTab('skills-tab')">Habilidades</button>
+    <button onclick="openTab('contact-tab')">Contato</button>
+    </div>
+    <div class="direitos">
+    <p>© 2023 Todos direitos reservados a @gutobielsantos</p>
+  </div>
+    </div>
+    <script>
+      function openTab(tabName) {
+        var i, x;
+        x = document.getElementsByClassName("tab");
+        for (i = 0; i < x.length; i++) {
+          x[i].classList.remove("active");
+        }
+        document.getElementById(tabName).classList.add("active");
+      }
+    </script>
+  </body>
+</html>
